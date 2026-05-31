@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borisco Furniture Business Cameroon Yaoundé | Affordable Sofas, Beds & Home Furniture</title>
+  <meta name="description" content="Borisco Furniture Business in Yaoundé, Cameroon. Affordable quality sofas, beds, chairs and home furniture. Fast delivery available. Call or WhatsApp +237 675 046 640." />
+  <meta name="keywords" content="Borisco Furniture Business, furniture Yaoundé, furniture Cameroon, sofas Yaoundé, beds Yaoundé, chairs, home decor, affordable furniture, Biyem-Assi, Cameroon furniture, fast delivery" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+        url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 92vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 18px;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ffd500;
+      color: #111;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 68px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: clamp(17px, 2.5vw, 24px);
+      margin-bottom: 28px;
+      color: #f1f1f1;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #ffd500;
+      color: #111;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #111;
+      padding: 12px 18px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 64px 18px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #555;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card, .product-card, .contact-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .product-card {
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-body {
+      padding: 20px;
+    }
+
+    .product-body h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0b7a35;
+      margin: 10px 0 16px;
+    }
+
+    .mini-btn {
+      display: inline-block;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .location-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: center;
+    }
+
+    .map-frame {
+      border: 0;
+      width: 100%;
+      height: 360px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-card a {
+      color: #0b7a35;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .cta {
+      background: #111;
+      color: white;
+      text-align: center;
+      border-radius: 22px;
+      padding: 42px 20px;
+    }
+
+    .cta h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #ddd;
+      margin-bottom: 24px;
+    }
+
+    footer {
+      background: #050505;
+      color: white;
+      text-align: center;
+      padding: 24px 18px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+      z-index: 20;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 46px 14px;
+      }
+
+      .floating-whatsapp {
+        left: 16px;
+        right: 16px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CHANGE THESE TWO LINKS FIRST:
+    1. Replace 237675046640 with your WhatsApp number in international format, example: 237670000000
+    2. Replace the map iframe with your real Google Maps embed link.
+  -->
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.tiktok.com/@gakehboris" target="_blank">TikTok</a>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <span class="badge">Premium comfort • Affordable prices • Fast delivery</span>
+      <h1>Borisco Furniture Business</h1>
+      <p style="font-size: clamp(20px, 3vw, 30px); font-weight: 700; color: #ffd500; margin-bottom: 16px;">Beautiful Sofas, Beds & Home Furniture</p>
+      <p>Transform your home with beautiful, comfortable and durable furniture from Borisco Furniture Business. We offer stylish sofas, beds and home designs at prices customers can trust. Order today by WhatsApp or call +237 675 046 640 — fast delivery available in Yaoundé and nearby areas.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://wa.me/237675046640?text=Hello%2C%20I%20saw%20Borisco%20Furniture%20Business%20online.%20I%20am%20interested%20in%20your%20furniture.%20Please%20send%20me%20prices%20and%20delivery%20details." target="_blank">Order on WhatsApp</a>
+        <a class="btn btn-secondary" href="#products">View Products</a>
+        <a class="btn btn-secondary" href="https://www.tiktok.com/@gakehboris" target="_blank">Follow on TikTok</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Buy From Borisco Furniture Business?</h2>
+        <p>We make it easy to furnish your home with style, comfort and confidence. Our products are beautiful, affordable and ready for customers who want quality without stress.</p>
+      </div>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Beautiful Modern Designs</h3>
+          <p>Give your home a fresh and elegant look with comfortable sofas, beds, chairs and room sets made for everyday living.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Affordable Prices</h3>
+          <p>Enjoy quality furniture at fair prices. We keep our prices clear so you can choose what fits your budget.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Easy WhatsApp Ordering</h3>
+          <p>See what you like, click the WhatsApp button and order fast. We answer questions, confirm prices and help with delivery.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Fast Delivery</h3>
+          <p>Delivery is fast around Yaoundé. Call or WhatsApp +237 675 046 640 to confirm your order.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Local Selling Spot</h3>
+          <p>Use the map to find us easily in Yaoundé, Cameroon and visit to see available furniture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" style="background:#fff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Available Furniture & Prices</h2>
+        <p>Shop beautiful furniture for your living room and bedroom. Prices are listed clearly, and every item can be ordered directly through WhatsApp.</p>
+      </div>
+
+      <div class="products">
+        <div class="product-card">
+          <img src="images/product-1.jpg" alt="Grey L-shape sofa set with yellow pillows" />
+          <div class="product-body">
+            <h3>Grey L-Shape Sofa Set</h3>
+            <p>Modern living room sofa set with matching pillows.</p>
+            <div class="price">FCFA 280,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Grey%20L-Shape%20Sofa%20Set%20for%20FCFA%20280%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-2.jpg" alt="Orange luxury sofa set" />
+          <div class="product-body">
+            <h3>Orange Luxury Sofa Set</h3>
+            <p>Premium sofa set for a stylish living room.</p>
+            <div class="price">FCFA 500,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Orange%20Luxury%20Sofa%20Set%20for%20FCFA%20500%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-3.jpg" alt="Grey and orange sofa set" />
+          <div class="product-body">
+            <h3>Grey & Orange Sofa Set</h3>
+            <p>Comfortable sofa design with modern color combination.</p>
+            <div class="price">FCFA 450,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Grey%20and%20Orange%20Sofa%20Set%20for%20FCFA%20450%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-4.jpg" alt="Outdoor display sofa set" />
+          <div class="product-body">
+            <h3>Display Sofa Set</h3>
+            <p>Clean sofa set available for home or apartment setup.</p>
+            <div class="price">FCFA 300,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Display%20Sofa%20Set%20for%20FCFA%20300%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-5.jpg" alt="Blue recliner sofa set" />
+          <div class="product-body">
+            <h3>Blue Recliner Sofa Set</h3>
+            <p>Soft reclining sofa set for comfort and relaxation.</p>
+            <div class="price">FCFA 180,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Blue%20Recliner%20Sofa%20Set%20for%20FCFA%20180%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-6.jpg" alt="Bed frame and mattress set" />
+          <div class="product-body">
+            <h3>Bed Frame & Mattress Set</h3>
+            <p>Comfortable bedroom furniture set with quality finish.</p>
+            <div class="price">FCFA 300,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Bed%20Frame%20and%20Mattress%20Set%20for%20FCFA%20300%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-7.jpg" alt="Living room sofa set" />
+          <div class="product-body">
+            <h3>Living Room Sofa Set</h3>
+            <p>Elegant sofa set suitable for family living rooms.</p>
+            <div class="price">FCFA 400,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Living%20Room%20Sofa%20Set%20for%20FCFA%20400%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-8.jpg" alt="Bedroom bed set" />
+          <div class="product-body">
+            <h3>Bedroom Bed Set</h3>
+            <p>Beautiful bed design for a complete bedroom look.</p>
+            <div class="price">FCFA 500,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Bedroom%20Bed%20Set%20for%20FCFA%20500%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-9.jpg" alt="Green headboard design" />
+          <div class="product-body">
+            <h3>Green Headboard Design</h3>
+            <p>Modern padded headboard for bedroom wall design.</p>
+            <div class="price">FCFA 250,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Green%20Headboard%20Design%20for%20FCFA%20250%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-10.jpg" alt="Classic sofa set" />
+          <div class="product-body">
+            <h3>Classic Sofa Set</h3>
+            <p>Classic design sofa set with strong decorative style.</p>
+            <div class="price">FCFA 350,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Classic%20Sofa%20Set%20for%20FCFA%20350%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product-11.jpg" alt="Blue wall panel design" />
+          <div class="product-body">
+            <h3>Blue Wall Panel Design</h3>
+            <p>Stylish wall panel design for room decoration.</p>
+            <div class="price">FCFA 230,000</div>
+            <a class="mini-btn" href="https://wa.me/237675046640?text=Hello%2C%20I%20want%20the%20Blue%20Wall%20Panel%20Design%20for%20FCFA%20230%2C000" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <div class="container location-box">
+      <div>
+        <div class="section-title" style="text-align:left;margin-bottom:18px;">
+          <h2>Visit Our Selling Spot</h2>
+          <p>We are located in Yaoundé, Cameroon. Customers can visit, view available furniture and order with confidence. Fast delivery is available after confirmation.</p>
+        </div>
+        <p><strong>Location:</strong> 3°50'37.7&quot;N 11°29'48.1&quot;E — Yaoundé, Cameroon.</p>
+        <p><strong>Phone / WhatsApp:</strong> <a href="tel:+237675046640" style="color:#0b7a35; font-weight:700; text-decoration:none;">+237 675 046 640</a></p>
+        <p><strong>Delivery:</strong> Fast delivery available in Yaoundé and nearby areas. Contact us on WhatsApp to confirm.</p>
+        <br />
+        <a class="btn btn-primary" href="https://wa.me/237675046640?text=Hello%2C%20please%20send%20me%20your%20location" target="_blank">Get Location on WhatsApp</a>
+        <a class="btn btn-secondary" href="https://www.google.com/maps/place/3%C2%B050'37.7%22N+11%C2%B029'48.1%22E/@3.8438161,11.4941062,17z/data=!3m1!4b1!4m4!3m3!8m2!3d3.8438161!4d11.4966811?hl=en" target="_blank" style="margin-left:10px;">Open Google Map</a>
+      </div>
+
+      <iframe
+        class="map-frame"
+        src="https://www.google.com/maps?q=3.8438161,11.4966811&z=17&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="contact" style="background:#fff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Borisco Furniture Business</h2>
+        <p>Ready to upgrade your home? Call or message us today for available designs, prices and fast delivery.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Phone / WhatsApp</h3>
+          <p><a href="tel:+237675046640">Call +237 675 046 640</a></p>
+          <p><a href="https://wa.me/237675046640?text=Hello%2C%20I%20saw%20Borisco%20Furniture%20Business%20online.%20I%20want%20to%20buy%20furniture.%20Please%20send%20me%20available%20items%2C%20prices%20and%20delivery%20details." target="_blank">Chat with us on WhatsApp</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>TikTok</h3>
+          <p><a href="https://www.tiktok.com/@gakehboris" target="_blank">Follow @gakehboris</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Business Hours</h3>
+          <p>Monday - Saturday: 8:00 AM - 7:00 PM</p>
+          <p>Sunday: By appointment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <h2>Upgrade Your Home Today</h2>
+        <p>Do not wait to make your home beautiful. Choose your favorite furniture, send us a WhatsApp message, and we will confirm availability, price and fast delivery in Yaoundé.</p>
+        <a class="btn btn-primary" href="https://wa.me/237675046640?text=Hello%2C%20I%20saw%20your%20website%20and%20I%20want%20to%20buy%20furniture" target="_blank">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Borisco Furniture Business. All rights reserved.</p>
+    <p>Call / WhatsApp: <a href="tel:+237675046640" style="color:#ffd500; font-weight:700; text-decoration:none;">+237 675 046 640</a></p>
+    <p>Located in Yaoundé, Cameroon — fast delivery available.</p>
+    <p>Follow us on TikTok: <a href="https://www.tiktok.com/@gakehboris" target="_blank" style="color:#ffd500; font-weight:700; text-decoration:none;">@gakehboris</a></p>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/237675046640?text=Hello%2C%20I%20am%20interested%20in%20your%20furniture" target="_blank">WhatsApp Us</a>
+
+</body>
+</html>
