@@ -221,6 +221,54 @@
       gap: 20px;
     }
 
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+
+    .review-card {
+      background: white;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.09);
+      border: 1px solid #eeeeee;
+      position: relative;
+    }
+
+    .review-card::before {
+      content: "“";
+      position: absolute;
+      top: -8px;
+      left: 18px;
+      font-size: 76px;
+      color: #ffd500;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .stars {
+      color: #f2b400;
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin: 18px 0 12px;
+    }
+
+    .review-card p {
+      color: #444;
+      margin-bottom: 18px;
+    }
+
+    .reviewer {
+      font-weight: 800;
+      color: #111;
+    }
+
+    .review-location {
+      font-size: 14px;
+      color: #666;
+    }
+
     .contact-card a {
       color: #0b7a35;
       font-weight: 700;
@@ -289,6 +337,7 @@
   <nav>
     <a href="#products">Products</a>
     <a href="#location">Location</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
     <a href="https://www.tiktok.com/@gakehboris" target="_blank">TikTok</a>
   </nav>
@@ -480,6 +529,45 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
+    </div>
+  </section>
+
+  <section id="reviews" style="background:#fff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Customer Reviews</h2>
+        <p>Customers choose Borisco Furniture Business for beautiful designs, fair prices, quick communication and fast delivery around Yaoundé.</p>
+      </div>
+
+      <div class="reviews">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>The sofa quality is very good and the price was clear from the beginning. The team responded quickly on WhatsApp and helped me choose the right design for my living room.</p>
+          <div class="reviewer">Satisfied Customer</div>
+          <div class="review-location">Yaoundé, Cameroon</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>Beautiful furniture and professional service. I liked that the location was easy to find and the delivery was fast after confirming my order.</p>
+          <div class="reviewer">Happy Home Owner</div>
+          <div class="review-location">Biyem-Assi, Yaoundé</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>Borisco Furniture Business made the buying process simple. I saw the product online, contacted them on WhatsApp, confirmed the price and received good service.</p>
+          <div class="reviewer">Returning Customer</div>
+          <div class="review-location">Yaoundé, Cameroon</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>The bed design looked elegant and strong. I recommend them for anyone looking for affordable furniture with a modern look and reliable communication.</p>
+          <div class="reviewer">Bedroom Set Customer</div>
+          <div class="review-location">Yaoundé, Cameroon</div>
+        </div>
+      </div>
     </div>
   </section>
 
